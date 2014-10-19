@@ -35,6 +35,7 @@ var launched_count = 0;
         var freddoJSON = JSON.parse(getProtein);
 
         document.getElementById("protein").innerHTML = freddoJSON;
+    }
    }
 	
 	function updateDisplay() {
