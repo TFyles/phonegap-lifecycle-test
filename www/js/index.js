@@ -5,6 +5,13 @@ var launched_count = 0;
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
+
+		window.localStorage.setItem("Phone", "Blackberry");
+		window.localStorage.setItem("Laptop", "Compaq");
+		window.localStorage.setItem("Desktop", "Custom");
+
+		var phone_type = window.localStorage.getItem(Phone);
+		document.write(phone_type);
     }
 	
 	function updateDisplay() {
