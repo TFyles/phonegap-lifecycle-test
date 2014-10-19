@@ -12,7 +12,7 @@ var launched_count = 0;
 
 		document.getElementById("phone").innerHTML = localStorage.getItem("Phone");
         document.getElementById("length").innerHTML = localStorage.length;
-
+/*
         var freddo = {
         	"EnergyKJ": "2180",
         	"EnergyKcal": "520",
@@ -28,7 +28,7 @@ var launched_count = 0;
         	"Fibre" : "0.6"
         	
         }
-/*
+
         var freddoString = JSON.stringify(freddo);
         window.localStorage.setItem("Protein", freddoString);
         var getProtein = window.localStorage.getItem("Protein");
