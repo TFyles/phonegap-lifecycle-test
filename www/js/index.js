@@ -11,7 +11,8 @@ var launched_count = 0;
 		window.localStorage.setItem("Desktop", "Custom");
 
 		document.getElementById("data").innerHTML = localStorage.getItem("Phone");
-    }
+        document.getElementById("data").innerHTML = localStorage.length;
+   }
 	
 	function updateDisplay() {
 		$("#launched").text("Application launch test : " + launched_count);
