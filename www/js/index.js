@@ -11,7 +11,7 @@ var launched_count = 0;
 		window.localStorage.setItem("Desktop", "Custom");
 
 		var phone_type = window.localStorage.getItem(Phone);
-		document.write(phone_type);
+		$("#data").text(phone_type);
     }
 	
 	function updateDisplay() {
