@@ -10,8 +10,7 @@ var launched_count = 0;
 		window.localStorage.setItem("Laptop", "Compaq");
 		window.localStorage.setItem("Desktop", "Custom");
 
-		var phone_type = window.localStorage.getItem(Phone);
-		$("#data").text(phone_type);
+		document.getElementById("data").innerHTML = localStorage.getItem("Phone");
     }
 	
 	function updateDisplay() {
