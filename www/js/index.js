@@ -12,11 +12,11 @@ var launched_count = 0;
 
 		document.getElementById("phone").innerHTML = localStorage.getItem("Phone");
         document.getElementById("length").innerHTML = localStorage.length;
-/*
+
         var freddo = {
         	"EnergyKJ": "2180",
         	"EnergyKcal": "520",
-        	"Protein": "7.1"
+        	"Protein": "7.1",
         	"Carbohydrates": {
         		"Total": "59.0",
         		"Sugars": "58.5"
@@ -35,7 +35,7 @@ var launched_count = 0;
         var freddoJSON = JSON.parse(getProtein);
 
         document.getElementById("protein").innerHTML = freddoJSON;
-*/
+
    }
 	
 	function updateDisplay() {
