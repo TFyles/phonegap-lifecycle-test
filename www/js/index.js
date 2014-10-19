@@ -29,13 +29,14 @@ var launched_count = 0;
         	
         }
 
+/*
         var freddoString = JSON.stringify(freddo);
         window.localStorage.setItem("Protein", freddoString);
         var getProtein = window.localStorage.getItem("Protein");
         var freddoJSON = JSON.parse(getProtein);
 
         document.getElementById("protein").innerHTML = freddoJSON;
-
+*/
    }
 	
 	function updateDisplay() {
