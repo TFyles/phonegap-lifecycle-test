@@ -50,7 +50,7 @@ var launched_count = 0;
         var len = results.rows.length;
          document.getElementById("rows").innerHTML ="nutrition table: " + len + " rows found.";
         for (var i=0; i<len; i++){
-             document.getElementById("results").innerHTML ="Row = " + i + " ID = " + results.rows.item(i).id + " Name =  " + results.rows.item(i).name; + " Fat = " + results.rows.item(i).fat ;
+             document.getElementById("res").innerHTML ="Row = " + i + " ID = " + results.rows.item(i).id + " Name =  " + results.rows.item(i).name; + " Fat = " + results.rows.item(i).fat ;
        	}
        }
      
