@@ -45,15 +45,15 @@ var launched_count = 0;
        function queryDB(tx) {
         tx.executeSql('SELECT * FROM nutrition', [], Success, error);
        }
-
+/*
        function querySuccess(tx, results) {
         var len = results.rows.length;
          document.getElementById("rows").innerHTML ="nutrition table: " + len + " rows found.";
         for (var i=0; i<len; i++){
              document.getElementById("results").innerHTML ="Row = " + i + " ID = " + results.rows.item(i).id + " Name =  " + results.rows.item(i).name; + " Fat = " + results.rows.item(i).fat ;
        	}
-
        }
+     */
    }
 	
 	function updateDisplay() {
