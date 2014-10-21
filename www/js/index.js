@@ -72,9 +72,9 @@ var launched_count = 0;
     //
     function querySuccess(tx, results) {
         var len = results.rows.length;
-        console.log("DEMO table: " + len + " rows found.");
+        document.getElementById("rows").innerHTML = "DEMO table: " + len + " rows found.";
         for (var i=0; i<len; i++){
-            console.log("Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data);
+        document.getElementById("res").innerHTML = "Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data;
         }
     }
 
