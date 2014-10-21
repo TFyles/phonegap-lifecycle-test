@@ -13,7 +13,13 @@ var launched_count = 0;
 		document.getElementById("phone").innerHTML = localStorage.getItem("Phone");
         document.getElementById("length").innerHTML = localStorage.length;
 
-       
+       var me =  {
+       	"firstName":"Tom",
+       	"lastName":"Fyles",
+       	"course":"computing"
+       };
+
+       document.getElementById("ja").innerHTML = me.firstName+" "+ me.lastName+" "+me.course;
    }
 	
 	function updateDisplay() {
