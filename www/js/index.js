@@ -25,7 +25,7 @@ var launched_count = 0;
        db.transaction(createTable, error, success);
 
         function createTable(tx){
-       	tx.executeSql("CREATE TABLE IF NOT EXISTS nutrition(id UNIQUE, name TEXT, fat FLOAT)");
+       	tx.executeSql("CREATE TABLE IF NOT EXISTS nutrition(id , name TEXT, fat FLOAT)");
        }
 
        function success(){
@@ -34,8 +34,8 @@ var launched_count = 0;
 
        function addFood(tx){
        	tx.executeSql("INSERT INTO nutrition(id, name, fat) VALUES (1, 'freddo', '28.5') ");
-       //	tx.executeSql("INSERT INTO nutrition(id, name, fat) VALUES (2, 'snowbites', '20') ");
-       //	tx.executeSql("INSERT INTO nutrition(id, name, fat) VALUES (3, 'snowman', '30.5') ");
+       	tx.executeSql("INSERT INTO nutrition(id, name, fat) VALUES (2, 'snowbites', '20') ");
+       	tx.executeSql("INSERT INTO nutrition(id, name, fat) VALUES (3, 'snowman', '30.5') ");
        }
 
        function error(err) {
