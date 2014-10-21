@@ -13,30 +13,7 @@ var launched_count = 0;
 		document.getElementById("phone").innerHTML = localStorage.getItem("Phone");
         document.getElementById("length").innerHTML = localStorage.length;
 
-        var freddo = {
-        	"EnergyKJ": "2180",
-        	"EnergyKcal": "520",
-        	"Protein": "7.1",
-        	"Carbohydrates": {
-        		"Total": "59.0",
-        		"Sugars": "58.5"
-        	}
-        	"Fat": {
-        		"Total" : "28.5",
-        		"Saturated": "17.5"
-        	}
-        	"Fibre" : "0.6"
-        	
-        }
-
-/*
-        var freddoString = JSON.stringify(freddo);
-        window.localStorage.setItem("Protein", freddoString);
-        var getProtein = window.localStorage.getItem("Protein");
-        var freddoJSON = JSON.parse(getProtein);
-
-        document.getElementById("protein").innerHTML = freddoJSON;
-*/
+       
    }
 	
 	function updateDisplay() {
