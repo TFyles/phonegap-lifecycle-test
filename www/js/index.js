@@ -25,6 +25,7 @@ var launched_count = 0;
        db.transaction(createTable, error, success);
 
         function createTable(tx){
+        	
        	tx.executeSql("CREATE TABLE IF NOT EXISTS nutrition(id , name TEXT, fat FLOAT)");
        }
 
@@ -48,9 +49,9 @@ var launched_count = 0;
 
        function querySuccess(tx, results) {
         var len = results.rows.length;
-         console.log("nutrition table: " + len + " rows found.");
+         document.getElementById("rows").innerHTML ="nutrition table: " + len + " rows found.";
         for (var i=0; i<len; i++){
-            console.log("Row = " + i + " ID = " + results.rows.item(i).id + " Name =  " + results.rows.item(i).name; + " Fat = " + results.rows.item(i).fat) ;
+             document.getElementById("res").innerHTML ="Row = " + i + " ID = " + results.rows.item(i).id + " Name =  " + results.rows.item(i).name; + " Fat = " + results.rows.item(i).fat ;
        	}
        }
    }
