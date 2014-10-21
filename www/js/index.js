@@ -25,7 +25,6 @@ var launched_count = 0;
        db.transaction(createTable, error, success);
 
         function createTable(tx){
-        tx.executeSql('DROP TABLE IF EXISTS nutrition');
        	tx.executeSql("CREATE TABLE IF NOT EXISTS nutrition(id , name TEXT, fat FLOAT)");
        }
 
